@@ -3,7 +3,7 @@
 A todo app made from scratch without following any tutorials, 
 made with React and Typescript. 
 
-Used for my own learning purposes as a refresher.
+Used for experimenting and my own learning purposes.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
