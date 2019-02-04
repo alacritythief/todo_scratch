@@ -4,6 +4,6 @@ import App from './TodoItem';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<TodoItem />, div);
+  ReactDOM.render(<TodoItem initItem="Buy Eggs"/>, div);
   ReactDOM.unmountComponentAtNode(div);
 });
