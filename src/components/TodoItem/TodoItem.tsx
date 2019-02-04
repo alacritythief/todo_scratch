@@ -1,10 +1,25 @@
 import React, { Component } from 'react';
 
-class TodoItem extends Component {
+interface TodoItemProps {
+  initItem: string;
+}
+
+interface TodoItemState {
+  item: string;
+}
+
+class TodoItem extends Component<TodoItemProps, TodoItemState> {
+  constructor (props: TodoItemProps) {
+    super(props);
+    this.state = {
+      item: this.props.initItem
+    }
+  }
+
   render () {
     return (
       <li>
-        I am an Item
+        { this.state.item }
       </li>
     )
   }

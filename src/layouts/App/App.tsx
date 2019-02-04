@@ -13,7 +13,7 @@ class App extends Component {
         <GlobalStyle/>
         <ContentContainer>
           <p>Hello World</p>
-          <TodoItem />
+          <TodoItem initItem="Buy eggs" />
         </ContentContainer>
       </AppContainer>
     );
