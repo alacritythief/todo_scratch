@@ -12,7 +12,7 @@ const textArray: string[] = [
 ]
 
 function randomText () {
-  let max = textArray.length - 1;
+  let max: number = textArray.length - 1;
   return textArray[Math.floor(Math.random() * Math.floor(max))]
 }
 
