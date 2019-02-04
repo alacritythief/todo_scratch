@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
+import { GlobalStyle } from '../../constants/global';
+import {
+  AppContainer,
+  ContentContainer
+} from '../../ui-components/containers';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <p>Hello World</p>
-      </div>
+      <AppContainer>
+        <GlobalStyle/>
+        <ContentContainer>
+          <p>Hello World</p>
+        </ContentContainer>
+      </AppContainer>
     );
   }
 }
