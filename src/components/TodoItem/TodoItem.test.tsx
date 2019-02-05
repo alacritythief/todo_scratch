@@ -8,7 +8,7 @@ const textArray: string[] = [
   'Buy Bread',
   'Make French Toast',
   'Walk the dog',
-  'Pet my cat',
+  'Pet my cat'
 ]
 
 function randomText () {
