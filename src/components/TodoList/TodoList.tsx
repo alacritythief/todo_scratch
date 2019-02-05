@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import TodoItem from '../TodoItem/TodoItem';
+import TodoItem from '../TodoItem';
+import TodoInput from '../TodoInput';
 
 interface TodoListState {
   todoItemArray: any[];
@@ -15,8 +16,12 @@ class TodoList extends Component<{}, TodoListState> {
 
   addTodoItem = (item: string) => {
     let addArray = this.state.todoItemArray;
+    let count = addArray.length
     addArray.push(
-      <TodoItem initItem={item}/>
+      <TodoItem 
+        key={count}
+        initItem={item}
+      />
     );
     this.setState({
       todoItemArray: addArray
@@ -25,9 +30,12 @@ class TodoList extends Component<{}, TodoListState> {
 
   render () {
     return (
-      <ul>
-        { this.state.todoItemArray }
-      </ul>
+      <React.Fragment>
+        <ul>
+          { this.state.todoItemArray }
+        </ul>
+        <TodoInput callback={this.addTodoItem}/>
+      </React.Fragment>
     )
   }
 }

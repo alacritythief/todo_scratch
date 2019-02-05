@@ -4,7 +4,7 @@ import {
   AppContainer,
   ContentContainer
 } from '../../ui-components/containers';
-import TodoItem from '../../components/TodoItem';
+import TodoList from '../../components/TodoList';
 
 class App extends Component {
   render() {
@@ -12,8 +12,8 @@ class App extends Component {
       <AppContainer>
         <GlobalStyle/>
         <ContentContainer>
-          <p>Hello World</p>
-          <TodoItem initItem="Buy eggs" />
+          <p>Reminder List</p>
+          <TodoList/>
         </ContentContainer>
       </AppContainer>
     );
